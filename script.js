@@ -15,4 +15,20 @@ const getComputerChoice = () => {
   }
 };
 
-getComputerChoice(0.44);
+const getHumanChoice = () => {
+  let humanChoice = prompt("Rock, Paper, Scissors");
+
+  let humanChoiceValue = humanChoice.toLowerCase();
+
+  if (humanChoiceValue === "rock") {
+    console.log("Rock");
+  } else if (humanChoiceValue === "paper") {
+    console.log("Paper");
+  } else if (humanChoiceValue === "scissors") {
+    console.log("Scissors");
+  } else {
+    console.log(
+      "Invalid choice. Please enter either 'rock', 'paper', or 'scissors'."
+    );
+  }
+};
