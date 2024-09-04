@@ -54,12 +54,10 @@ const playRound = (humanPlayer, computerPlayer) => {
     (computerPlayer === "paper" && humanPlayer === "rock") ||
     (computerPlayer === "scissors" && humanPlayer === "paper")
   ) {
-    humanScore--;
     computerScore++;
     console.log(`You lose!`);
   } else {
     humanScore++;
-
     console.log("You win!");
   }
 };
